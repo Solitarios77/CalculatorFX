@@ -1,0 +1,13 @@
+/*.root {*/
+/*    -fx-font-size: 34px;*/
+/*}*/
+.button {
+    -fx-max-height: Infinity;
+    -fx-max-width: Infinity;
+}
+.text-field {
+    -fx-font-size: 34px;
+}
+.label {
+    -fx-font-size: 24px;
+}

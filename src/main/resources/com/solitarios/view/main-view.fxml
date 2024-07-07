@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.solitarios.controller.MainController"
+            fx:id="root"
+          stylesheets="@main-view.css">
+    <rowConstraints>
+        <RowConstraints vgrow="ALWAYS" percentHeight="10" fillHeight="true"/>
+        <RowConstraints vgrow="ALWAYS" percentHeight="20" fillHeight="true"/>
+        <RowConstraints vgrow="ALWAYS" fillHeight="true"/>
+    </rowConstraints>
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" fillWidth="true"/>
+    </columnConstraints>
+    <Label fx:id="viewLabel" maxWidth="Infinity" maxHeight="Infinity" alignment="CENTER_RIGHT"></Label>
+    <TextField fx:id="numberTextField" maxWidth="Infinity" maxHeight="Infinity" alignment="BOTTOM_RIGHT" GridPane.rowIndex="1"></TextField>
+
+    <GridPane fx:id="buttonArea" style="-fx-background-color: red" GridPane.rowIndex="2">
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" fillWidth="true"/>
+            <ColumnConstraints hgrow="ALWAYS" fillWidth="true"/>
+            <ColumnConstraints hgrow="ALWAYS" fillWidth="true"/>
+            <ColumnConstraints hgrow="ALWAYS" fillWidth="true"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="ALWAYS" fillHeight="true"/>
+            <RowConstraints vgrow="ALWAYS" fillHeight="true"/>
+            <RowConstraints vgrow="ALWAYS" fillHeight="true"/>
+            <RowConstraints vgrow="ALWAYS" fillHeight="true"/>
+        </rowConstraints>
+        <Button fx:id="btnNumber7" text="7" onAction="#buttonClicked"/>
+        <Button text="4" GridPane.rowIndex="1" onAction="#buttonClicked"/>
+        <Button text="1" GridPane.rowIndex="2" onAction="#buttonClicked"/>
+        <Button text="C" GridPane.rowIndex="3" onAction="#buttonClicked"/>
+
+        <Button text="8" GridPane.columnIndex="1" onAction="#buttonClicked"/>
+        <Button text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" onAction="#buttonClicked"/>
+        <Button text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#buttonClicked"/>
+        <Button text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#buttonClicked"/>
+
+        <Button text="9" GridPane.columnIndex="2" onAction="#buttonClicked"/>
+        <Button text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" onAction="#buttonClicked"/>
+        <Button text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" onAction="#buttonClicked"/>
+        <Button text="." GridPane.columnIndex="2" GridPane.rowIndex="3" onAction="#buttonClicked"/>
+
+        <Button text="+" GridPane.columnIndex="3" onAction="#buttonClicked"/>
+        <Button text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" onAction="#buttonClicked"/>
+        <Button text="*" GridPane.columnIndex="3" GridPane.rowIndex="2" onAction="#buttonClicked"/>
+        <Button text="/" GridPane.columnIndex="3" GridPane.rowIndex="3" onAction="#buttonClicked"/>
+    </GridPane>
+
+
+</GridPane>
